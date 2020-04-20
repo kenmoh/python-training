@@ -31,7 +31,7 @@ def guessGame():
 
 
 
-# A Guessing game to guess betwwwn 1 to 6
+# A Guessing game to guess between 1 to 6
 def guessNumber():
     random_num = random.randint(1, 6)
     guess = int()
