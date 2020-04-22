@@ -1,4 +1,5 @@
 import random
+import calendar
 
 # Guessing Game
 
@@ -58,4 +59,27 @@ def guessNumber():
         print('You guessed correctly, WELDONE !')
 
 
-guessNumber()
+# print(calendar.firstweekday())
+# print(calendar.weekheader(5))
+# print(calendar.month(2020, 4))
+# print(calendar.weekday(2020, 4, 22))
+
+def reminder(the_year, the_month, the_day, name):
+    day = calendar.weekday(the_year, the_month, the_day)
+    if day == 0:
+        print('Monday')
+    elif day == 1:
+        print('Tuesday')
+    elif day == 2:
+        print('Wednesday')
+    elif day == 3:
+        print('Thursday')
+    elif day == 4:
+        print('Friday')
+    elif day == 5:
+        print('Saturday')
+    elif day == 6:
+        print('Sunday')
+    print(f'Today is {name} birthday ')
+
+reminder(2020, 5, 17, 'Ijeoma')
