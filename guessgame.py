@@ -82,4 +82,35 @@ def reminder(the_year, the_month, the_day, name):
         print('Sunday')
     print(f'Today is {name} birthday ')
 
-reminder(2020, 5, 17, 'Ijeoma')
+
+# day = {'year': 4, 'month': int(), 'day': int()}
+# print(day['year'])
+
+def prompt_input():
+    enter_year = input('Enter year: ')
+    enter_month = input('Enter month i.e 1-12: ')
+    enter_day = input('Enter day i.e 1-31: ')
+
+    Day = int(enter_day)
+    Month = int(enter_month)
+    Year = int(enter_year)
+
+    day = calendar.weekday(Year, Month, Day)
+
+    if day == 0:
+        print('Monday')
+    elif day == 1:
+        print('Tuesday')
+    elif day == 2:
+        print('Wednesday')
+    elif day == 3:
+        print('Thursday')
+    elif day == 4:
+        print('Friday')
+    elif day == 5:
+        print('Saturday')
+    elif day == 6:
+        print('Sunday')
+
+
+prompt_input()
